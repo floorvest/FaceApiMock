@@ -25,8 +25,8 @@ Route::prefix('face-api/v3')->group(function() {
     Route::post('/face/detect', [FaceApiController::class, 'detectFace']);
     Route::post('/face/identify', [FaceApiController::class, 'identifyFace']);
     Route::post('/face/add', [FaceApiController::class, 'addFace']);
-    Route::post('/face/liveness', [[FaceApiController::class, 'checkLiveness']);
-    Route::get('/group/list', [[FaceApiController::class, 'getGroupList']);
+    Route::post('/face/liveness', [FaceApiController::class, 'checkLiveness']);
+    Route::get('/group/list', [FaceApiController::class, 'getGroupList']);
 
 });
 
