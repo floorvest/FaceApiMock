@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\FaceApiController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,11 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('face-api/v3')->group(function() {
 
-    Route::post('/face/detect', 'FaceApiController@detectFace');
-    Route::post('/face/identify', 'FaceApiController@identifyFace');
-    Route::post('/face/add', 'FaceApiController@addFace');
-    Route::post('/face/liveness', 'FaceApiController@checkLiveness');
-    Route::get('/group/list', 'FaceApiController@geGroupList');
+    Route::post('/face/detect', [FaceApiController::class, 'detectFace']);
+    Route::post('/face/identify', [FaceApiController::class, 'identifyFace']);
+    Route::post('/face/add', [FaceApiController::class, 'addFace']);
+    Route::post('/face/liveness', [[FaceApiController::class, 'checkLiveness']);
+    Route::get('/group/list', [[FaceApiController::class, 'getGroupList']);
 
 });
 
