@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::group('face-api/v3', function() {
+Route::prefix('face-api/v3')->group(function() {
 
     Route::post('face/detect', 'FaceApiController@detectFace');
     Route::post('face/identify', 'FaceApiController@identifyFace');
