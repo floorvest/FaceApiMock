@@ -20,11 +20,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('face-api/v3')->group(function() {
 
-    Route::post('face/detect', 'FaceApiController@detectFace');
-    Route::post('face/identify', 'FaceApiController@identifyFace');
-    Route::post('face/add', 'FaceApiController@addFace');
-    Route::post('face/liveness', 'FaceApiController@checkLiveness');
-    Route::get('group/list', 'FaceApiController@geGroupList');
+    Route::post('/face/detect', 'FaceApiController@detectFace');
+    Route::post('/face/identify', 'FaceApiController@identifyFace');
+    Route::post('/face/add', 'FaceApiController@addFace');
+    Route::post('/face/liveness', 'FaceApiController@checkLiveness');
+    Route::get('/group/list', 'FaceApiController@geGroupList');
 
 });
 
