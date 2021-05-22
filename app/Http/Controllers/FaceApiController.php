@@ -84,7 +84,7 @@ class FaceApiController extends Controller {
         ]);
     }
 
-    public function geGroupList(Request $request) {
+    public function getGroupList(Request $request) {
         return response()->json([
             "error_code" => 0, 
             "error_msg" => "SUCCESS", 
