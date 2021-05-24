@@ -52,7 +52,7 @@ class FaceApiController extends Controller {
                   "user_list" => [
                      [
                         "group_id" => "testface", 
-                        "user_id" => "ece16d89-cfe9-49de-8bb7-445d6d6a6fad", 
+                        "user_id" => "ece16d89_cfe9_49de_8bb7_445d6d6a6fad", 
                         "user_info" => "", 
                         "score" => 87.807579040527 
                      ] 
