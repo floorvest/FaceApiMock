@@ -52,14 +52,14 @@ class FaceApiController extends Controller {
                   "user_list" => [
                      [
                         "group_id" => "testface", 
-                        "user_id" => "ece16d89_cfe9_49de_8bb7_445d6d6a6fad", 
+                        "user_id" => "f15c5dea_4bfa_4f6d_8b0c_167d6dbcbba0", 
                         "user_info" => "willy", 
                         "score" => 87.807579040527 
                      ],
                      [
                         "group_id" => "testface2", 
-                        "user_id" => "7344fefa_f2f0_4c2f_9553_13681afad2a5", 
-                        "user_info" => "bazla", 
+                        "user_id" => "e1cfb296_e696_4e95_8e67_52d4fda5ccaa", 
+                        "user_info" => "abdul", 
                         "score" => 87.807579040527 
                      ],
                      [
